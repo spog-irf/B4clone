@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/vcs.css">
+</head>
+<body>
+    <h1>Version Control System... created by Sam Bjorkman May 2019</h1>
+    <p>   Version control systems are a category of software tools that help a software team manage changes to source code over time. Version control software keeps track of every modification to the code in a special kind of database. If a mistake is made, developers can turn back the clock and compare earlier versions of the code to help fix the mistake while minimizing disruption to all team members.
+<br>
+        For almost all software projects, the source code is like the crown jewels - a precious asset whose value must be protected. For most software teams, the source code is a repository of the invaluable knowledge and understanding about the problem domain that the developers have collected and refined through careful effort. Version control protects source code from both catastrophe and the casual degradation of human error and unintended consequences.
+    <br>
+    </p>
+<a href="https://www.atlassian.com/git/tutorials/what-is-version-control">Source</a>
+<p>Git is a distributed version control tool that can manage a development project's source code history, while GitHub is a cloud based platform built around the Git tool. Git is a tool a developer installs locally on their computer, while GitHub is an online service that stores code pushed to it from computers running the Git tool. The key difference between Git and GitHub is that Git is an open-source tool developers install locally to manage source code, while GitHub is an online service to which developers who use Git can connect and upload or download resources.</p>
+<a href="https://www.theserverside.com/video/Git-vs-GitHub-What-is-the-difference-between-them">Source</a>
+<h3>1) compsci@compsci-VBox:/var/www/html/willc_20may$ sudo apt update</h3>
+
+<h3> 2) compsci@compsci-VBox:/var/www/html/willc_20may$ sudo apt install git</h3>
+
+<h3> 3) compsci@compsci-VBox:/var/www/html/willc_20may$ git --version git version 2.17.1</h3>
+
+<h3> 4) compsci@compsci-VBox:/var/www/html/willc_20may$ git config --global user.name "WillCanfield" </h3>
+
+<h3> 5) compsci@compsci-VBox:/var/www/html/willc_20may$ git config --global user.email "will.canfield14@gmail.com" </h3>
+
+<h3> 6) compsci@compsci-VBox:/var/www/html/willc_20may$ git config --list user.name=WillCanfield user.email=will.canfield14@gmail.com</h3>
+
+<pre><font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>~/Desktop/HTML/samb_22may/projects/vcs</b></font>$ git config
+    usage: git config [&lt;options&gt;]
+    
+    Config file location
+        --global              use global config file
+        --system              use system config file
+        --local               use repository config file
+        -f, --file &lt;file&gt;     use given config file
+        --blob &lt;blob-id&gt;      read config from given blob object
+    
+    Action
+        --get                 get value: name [value-regex]
+        --get-all             get all values: key [value-regex]
+        --get-regexp          get values for regexp: name-regex [value-regex]
+        --get-urlmatch        get value specific for the URL: section[.var] URL
+        --replace-all         replace all matching variables: name value [value_regex]
+        --add                 add a new variable: name value
+        --unset               remove a variable: name [value-regex]
+        --unset-all           remove all matches: name [value-regex]
+        --rename-section      rename section: old-name new-name
+        --remove-section      remove a section: name
+        -l, --list            list all
+        -e, --edit            open an editor
+        --get-color           find the color configured: slot [default]
+        --get-colorbool       find the color setting: slot [stdout-is-tty]
+    
+    Type
+        --bool                value is &quot;true&quot; or &quot;false&quot;
+        --int                 value is decimal number
+        --bool-or-int         value is --bool or --int
+        --path                value is a path (file or directory name)
+        --expiry-date         value is an expiry date
+    
+    Other
+        -z, --null            terminate values with NUL byte
+        --name-only           show variable names only
+        --includes            respect include directives on lookup
+        --show-origin         show origin of config (file, standard input, blob, command line)
+    
+    <font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>~/Desktop/HTML/samb_22may/projects/vcs</b></font>$ git init
+    Initialized empty Git repository in /home/compsci/Desktop/HTML/samb_22may/projects/vcs/.git/
+    <font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>~/Desktop/HTML/samb_22may/projects/vcs</b></font>$ ll
+    total 28
+    drwxrwxr-x  6 compsci compsci 4096 May 22 13:54 <font color="#729FCF"><b>.</b></font>/
+    drwx------ 31 compsci compsci 4096 May 20 13:14 <font color="#729FCF"><b>..</b></font>/
+    drwxrwxr-x  2 compsci compsci 4096 May 20 13:16 <font color="#729FCF"><b>css</b></font>/
+    drwxr-xr-x  7 compsci compsci 4096 May 22 13:54 <font color="#729FCF"><b>.git</b></font>/
+    drwxrwxr-x  2 compsci compsci 4096 May 20 13:14 <font color="#729FCF"><b>images</b></font>/
+    -rw-rw-r--  1 compsci compsci 4088 May 22 13:53 index.html
+    drwxrwxr-x  2 compsci compsci 4096 May 20 13:14 <font color="#729FCF"><b>js</b></font>/
+    <font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>~/Desktop/HTML/samb_22may/projects/vcs</b></font>$ 
+    </pre>
+    <pre> git diff
+    </pre>
+
+</body>
+</html>
